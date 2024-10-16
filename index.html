@@ -4,7 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>分散置中的三張圖片</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 重設一些基本樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 頁面基本樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 頁面標題樣式 */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 圖片容器樣式 */
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* 每張圖片之間分散分布 */
+            align-items: center;           /* 圖片垂直居中 */
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* 單個圖片項目樣式 */
+        .image-item {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* 圖片樣式 */
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 頁腳樣式 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
 </head>
 <body>
     <!-- 頁面標題 -->
@@ -16,13 +74,13 @@
     <main class="image-container">
         <!-- 圖片項目 -->
         <div class="image-item">
-            <img src="https://i.imgur.com/6NKSvTO.png" alt="圖片 1">
+            <img src="https://i.imgur.com/9lffFRz.png" alt="圖片 1">
         </div>
         <div class="image-item">
-            <img src="https://i.imgur.com/EYvm9BN.jpeg" alt="圖片 2">
+            <img src="https://i.imgur.com/D4IjA3J.jpeg" alt="圖片 2">
         </div>
         <div class="image-item">
-            <img src="https://i.imgur.com/9lffFRz.png" alt="圖片 3">
+            <img src="https://i.imgur.com/jgci1IZ.png" alt="圖片 3">
         </div>
     </main>
 
